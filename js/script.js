@@ -1,6 +1,6 @@
 let canvas = document.querySelector('#canvas');
-let canvasWidth = 300;
-let canvasHeight = 300;
+let canvasWidth = 600;
+let canvasHeight = 600;
 let timer = 1;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
@@ -85,7 +85,7 @@ let gameLoop = () => {
     let frameX = position * dogWidth;
     let frameY = allFrameLoc[animationType].location[position].y;
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-    ctx.drawImage(image,frameX,frameY,dogWidth, dogHeight,0,0,canvasWidth,canvasHeight);
+    ctx.drawImage(image,frameX,frameY,dogWidth, dogHeight,0,0,dogWidth,dogHeight);
     timer = requestAnimationFrame(gameLoop);
 }
 
