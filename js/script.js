@@ -7,7 +7,7 @@ canvas.height = canvasHeight;
 
 let ctx = canvas.getContext("2d");
 var image = new Image();
-image.src="../img/shadow_dog.png";
+image.src="img/shadow_dog.png";
 
 // dog width 
 let dogWidth = (image.naturalWidth / 12) + 2;
